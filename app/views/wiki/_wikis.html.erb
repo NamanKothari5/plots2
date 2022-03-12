@@ -19,11 +19,11 @@
         <td>
           <% if wiki.main_image.present? && wiki.main_image.is_image? %>
             <div style="padding-bottom: 30px;" class="pl-md-5 pl-lg-5">
-              <img src="<%= wiki.main_image.path(:default) %>" style="width:120px;border-radius:5px;">
+              <img alt="Not Available" src="<%= wiki.main_image.path(:default) %>" style="width:120px;border-radius:5px;">
             </div>
           <% elsif wiki.scraped_image %>
             <div style="padding-bottom:30px;padding-top:10px;">
-              <img src="<%= wiki.scraped_image %>" style="width:120px;border-radius:5px;">
+              <img alt="Not Available" src="<%= wiki.scraped_image %>" style="width:120px;border-radius:5px;">
             </div>
           <% end %>
         </td>
